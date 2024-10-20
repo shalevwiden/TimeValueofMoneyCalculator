@@ -14,17 +14,26 @@
     <!-- Future Value (FV) and Present Value (PV) Sections -->
     <div class="section">
       <h3>Calculate Future Value (FV)</h3>
-      <!-- FV Calculation Inputs and Button Here -->
+      <input type="number" id="pvInput" placeholder="Present Value (PV)">
+      <input type="number" id="rateInputFV" placeholder="Rate (r in %)">
+      <input type="number" id="timeInputFV" placeholder="Time (t in years)">
+      <button onclick="calculateFV()">Calculate FV</button>
+      <p>Future Value: <span id="resultFV"></span></p>
     </div>
 
     <div class="section">
       <h3>Calculate Present Value (PV)</h3>
-      <!-- PV Calculation Inputs and Button Here -->
+      <input type="number" id="fvInput" placeholder="Future Value (FV)">
+      <input type="number" id="rateInputPV" placeholder="Rate (r in %)">
+      <input type="number" id="timeInputPV" placeholder="Time (t in years)">
+      <button onclick="calculatePV()">Calculate PV</button>
+      <p>Present Value: <span id="resultPV"></span></p>
     </div>
 
-    <div>
-      <h3>Result: <span id="result"></span></h3>
-    </div>
+    <!-- Back to Home Button -->
+    <a href="index.html">
+      <button>Back to Home</button>
+    </a>
   </div>
 
   <script src="app.js"></script>
