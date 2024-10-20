@@ -100,3 +100,23 @@ h3 {
   font-weight: bold;
   font-size: 18px;
 }
+/* Style for the back button container */
+.back-button-container {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  margin-top: 20px; /* Add some space above the button */
+}
+
+.back-button-container button {
+  padding: 10px 20px; /* Add padding for the button */
+  background-color: #00B294; /* Button background color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+}
+
+.back-button-container button:hover {
+  background-color: #00416A; /* Darker background on hover */
+}
