@@ -3,60 +3,25 @@ body {
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #00416A, #00B294); /* Dark blue to green gradient */
   color: white; /* All text white */
-  height: 100vh; /* Ensure the background covers the whole height */
+  height: 100vh;
   margin: 0;
   display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  justify-content: flex-start; /* Align items to the top */
 }
 
-/* Center the main container */
+/* Main container for the calculator page */
 .container {
-  padding: 40px;
-  max-width: 400px; /* Limit the width of the centered content */
+  padding: 20px;
+  max-width: 1200px; /* Increased width for the calculator layout */
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent black background */
-  border-radius: 15px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* Enhanced shadow for a subtle 'pop' */
-  text-align: center;
-}
-
-/* Style for the welcome section */
-.welcome-section {
-  text-align: center;
-}
-
-.welcome-section h1 {
-  margin-bottom: 20px;
-  font-size: 28px; /* Slightly larger font size */
-  font-weight: bold;
-}
-
-.welcome-section button {
-  background-color: #00B294;
-  color: white;
-  border: none;
-  padding: 15px 30px; /* Bigger button */
-  cursor: pointer;
-  border-radius: 8px; /* Rounder corners */
-  font-size: 18px; /* Larger button text */
-  transition: background-color 0.3s ease-in-out; /* Smooth hover transition */
-}
-
-.welcome-section button:hover {
-  background-color: #00416A; /* Darker on hover */
-  transform: scale(1.05); /* Slight pop on hover */
-}
-/* Add this CSS to your existing styles.css file */
-
-/* Style for the calculator container */
-.calculator-container {
-  display: flex; /* Enable flexbox layout */
-  justify-content: space-between; /* Space sections evenly */
+  display: flex; /* Enable flexbox for the calculator sections */
+  justify-content: space-between; /* Space the sections evenly */
   margin-top: 20px; /* Add some spacing above */
 }
 
-/* Style for individual sections */
+/* Individual calculator sections */
 .section {
   flex: 1; /* Allow sections to grow equally */
   margin: 0 10px; /* Add some horizontal spacing */
@@ -66,7 +31,34 @@ body {
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); /* Shadow for depth */
 }
 
-/* Ensure input and button styling remain */
+/* Style for the welcome section */
+.welcome-section {
+  text-align: center;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent black background for contrast */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.welcome-section h1 {
+  margin-bottom: 20px;
+}
+
+.welcome-section button {
+  background-color: #00B294;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.welcome-section button:hover {
+  background-color: #00416A; /* Darker on hover */
+}
+
+/* Input and button styles */
 input {
   margin: 10px 0;
   padding: 8px;
@@ -84,4 +76,27 @@ button {
   margin-top: 10px;
   cursor: pointer;
   border-radius: 5px;
+}
+
+button:hover {
+  background-color: #00416A; /* Darker on hover */
+}
+
+/* Text and heading styles */
+h2, h3, label {
+  color: white;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  margin-top: 0; /* Remove extra margin for section titles */
+}
+
+/* Result styling */
+#result {
+  font-weight: bold;
+  font-size: 18px;
 }
