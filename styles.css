@@ -3,63 +3,47 @@ body {
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #00416A, #00B294); /* Dark blue to green gradient */
   color: white; /* All text white */
-  min-height: 100vh; /* Ensure background covers full viewport height */
+  height: 100vh; /* Ensure the background covers the whole height */
   margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
 }
 
+/* Center the main container */
 .container {
-  padding: 20px;
-  max-width: 400px;
+  padding: 40px;
+  max-width: 400px; /* Limit the width of the centered content */
   width: 100%;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent black background */
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* Enhanced shadow for a subtle 'pop' */
+  text-align: center;
 }
 
-/* Style for the sections */
-.section {
+/* Style for the welcome section */
+.welcome-section {
+  text-align: center;
+}
+
+.welcome-section h1 {
   margin-bottom: 20px;
-  padding: 15px;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
+  font-size: 28px; /* Slightly larger font size */
+  font-weight: bold;
 }
 
-input {
-  margin: 10px 0;
-  padding: 8px;
-  width: 100%;
-  border: none;
-  border-radius: 5px;
-}
-
-button {
+.welcome-section button {
   background-color: #00B294;
   color: white;
   border: none;
-  padding: 10px;
-  width: 100%;
-  margin-top: 10px;
+  padding: 15px 30px; /* Bigger button */
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 8px; /* Rounder corners */
+  font-size: 18px; /* Larger button text */
+  transition: background-color 0.3s ease-in-out; /* Smooth hover transition */
 }
 
-button:hover {
-  background-color: #00416A;
-}
-
-h2, h3, label {
-  color: white;
-}
-
-h2 {
-  text-align: center;
-}
-
-#result {
-  font-weight: bold;
-  font-size: 18px;
-  color: white;
-  text-align: center;
+.welcome-section button:hover {
+  background-color: #00416A; /* Darker on hover */
+  transform: scale(1.05); /* Slight pop on hover */
 }
