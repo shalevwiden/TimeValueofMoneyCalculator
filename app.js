@@ -6,7 +6,7 @@ const resultDisplay = document.getElementById("result");
 // Function to calculate Future Value (FV)
 function calculateFV() {
   const pv = parseFloat(document.getElementById("pv").value); // Present Value
-  const rate = parseFloat(document.getElementById("rate_fv").value) / 100; // Annual interest rate in decimal
+  const rate = parseFloat(document.getElementById("rate_fv").value) / 100; // Convert to decimal
   const time = parseFloat(document.getElementById("time_fv").value); // Time in years
 
   // Validate inputs
@@ -23,7 +23,7 @@ function calculateFV() {
 // Function to calculate Present Value (PV)
 function calculatePV() {
   const fv = parseFloat(document.getElementById("fv").value); // Future Value
-  const rate = parseFloat(document.getElementById("rate_pv").value) / 100; // Annual interest rate in decimal
+  const rate = parseFloat(document.getElementById("rate_pv").value) / 100; // Convert to decimal
   const time = parseFloat(document.getElementById("time_pv").value); // Time in years
 
   // Validate inputs
