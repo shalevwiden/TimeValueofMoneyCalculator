@@ -39,6 +39,7 @@ function calculatePV() {
 
 // Function to go back to the previous page
 function goBack() {
+  console.log("Back button clicked"); // Debugging statement
   window.history.back(); // Navigate back to the previous page in the browser history
 }
 
