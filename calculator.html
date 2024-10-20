@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="container">
-    <!-- Back Button -->
+    <!-- Back to Home Button -->
     <a href="index.html">
       <button>Back to Home</button>
     </a>
@@ -19,31 +19,19 @@
     <!-- Future Value (FV) Section -->
     <div class="section">
       <h3>Calculate Future Value (FV)</h3>
-      <label for="pv">Present Value (PV):</label>
-      <input type="number" id="pv" placeholder="Enter Present Value">
-
-      <label for="rate_fv">Rate (r):</label>
-      <input type="number" id="rate_fv" step="0.01" placeholder="Enter Rate (as decimal)">
-
-      <label for="time_fv">Time (t):</label>
-      <input type="number" id="time_fv" placeholder="Enter Time in Years">
-
-      <button id="calculate_fv">Calculate Future Value (FV)</button>
+      <input type="number" id="pv" placeholder="Present Value (PV)" required>
+      <input type="number" id="rate_fv" placeholder="Annual Interest Rate (%)" required>
+      <input type="number" id="time_fv" placeholder="Time (years)" required>
+      <button id="calculate_fv">Calculate Future Value</button>
     </div>
 
     <!-- Present Value (PV) Section -->
     <div class="section">
       <h3>Calculate Present Value (PV)</h3>
-      <label for="fv">Future Value (FV):</label>
-      <input type="number" id="fv" placeholder="Enter Future Value">
-
-      <label for="rate_pv">Rate (r):</label>
-      <input type="number" id="rate_pv" step="0.01" placeholder="Enter Rate (as decimal)">
-
-      <label for="time_pv">Time (t):</label>
-      <input type="number" id="time_pv" placeholder="Enter Time in Years">
-
-      <button id="calculate_pv">Calculate Present Value (PV)</button>
+      <input type="number" id="fv" placeholder="Future Value (FV)" required>
+      <input type="number" id="rate_pv" placeholder="Annual Interest Rate (%)" required>
+      <input type="number" id="time_pv" placeholder="Time (years)" required>
+      <button id="calculate_pv">Calculate Present Value</button>
     </div>
 
     <div>
