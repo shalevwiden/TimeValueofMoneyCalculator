@@ -11,18 +11,26 @@ body {
   justify-content: center;
 }
 
-/* Add specific styles for the Get Started container */
+/* Style for the container */
+.container {
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Style for the Get Started page (targeted using .get-started-container) */
 .get-started-container {
   padding: 20px;
   max-width: 400px;
   width: 100%;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
-  text-align: center; /* Ensure text and button are centered */
+  text-align: center; /* Center content */
   background-color: rgba(0, 0, 0, 0.6); /* Add background for contrast */
   border-radius: 10px;
 }
 
-/* Style for the welcome section */
+/* Style for the welcome section in the Get Started page */
 .welcome-section h1 {
   margin-bottom: 20px;
 }
@@ -39,4 +47,50 @@ body {
 
 .welcome-section button:hover {
   background-color: #00416A; /* Darker on hover */
+}
+
+/* Style for the calculator page (default) */
+.section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+input {
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #00B294;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #00416A;
+}
+
+h2, h3, label {
+  color: white;
+}
+
+h2 {
+  text-align: center;
+}
+
+#result {
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  text-align: center;
 }
