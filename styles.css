@@ -1,5 +1,3 @@
-Updated gradient CSS: 
-
 /* Style for the background gradient */
 body {
   font-family: Arial, sans-serif;
@@ -8,9 +6,9 @@ body {
   min-height: 100vh; /* Ensure background covers full viewport height */
   margin: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Stack elements vertically */
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-start; /* Align items to the top */
 }
 
 .container {
@@ -20,12 +18,62 @@ body {
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* Style for the sections */
-.section {
-  margin-bottom: 20px;
-  padding: 15px;
-  background-color: rgba(0, 0, 0, 0.8);
+/* Style for the welcome section */
+.welcome-section {
+  text-align: center;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent black background for contrast */
   border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.welcome-section h1 {
+  margin-bottom: 20px;
+}
+
+.welcome-section button {
+  background-color: #00B294;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.welcome-section button:hover {
+  background-color: #00416A; /* Darker on hover */
+}
+
+/* Specific styles for the Calculator page */
+.calculator-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the top */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Style for the calculation section */
+.calculator-section {
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1); /* More gradient-like background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+  margin-top: 20px; /* Space above */
+}
+
+/* Ensuring input and button alignment */
+.section {
+  margin-bottom: 20px; /* Space between sections */
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.1); /* More gradient-like background */
+  border-radius: 10px;
+  width: 100%; /* Full width for better alignment */
+  display: flex;
+  flex-direction: column; /* Stack inputs vertically */
+  align-items: center; /* Center align inputs */
 }
 
 input {
@@ -48,7 +96,7 @@ button {
 }
 
 button:hover {
-  background-color: #00416A;
+  background-color: #00416A; /* Darker on hover */
 }
 
 h2, h3, label {
@@ -59,9 +107,12 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  margin-top: 0; /* Remove extra margin for section titles */
+}
+
 #result {
   font-weight: bold;
   font-size: 18px;
-  color: white;
   text-align: center;
 }
