@@ -1,16 +1,16 @@
-Working CSS 2 
+Updated gradient CSS: 
 
 /* Style for the background gradient */
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #00416A, #00B294); /* Dark blue to green gradient */
   color: white; /* All text white */
-  height: 100vh;
+  min-height: 100vh; /* Ensure background covers full viewport height */
   margin: 0;
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Align items to the top */
+  justify-content: flex-start;
 }
 
 .container {
@@ -20,37 +20,11 @@ body {
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* Style for the welcome section */
-.welcome-section {
-  text-align: center;
-  padding: 40px;
-  background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent black background for contrast */
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.welcome-section h1 {
-  margin-bottom: 20px;
-}
-
-.welcome-section button {
-  background-color: #00B294;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-.welcome-section button:hover {
-  background-color: #00416A; /* Darker on hover */
-}
-
+/* Style for the sections */
 .section {
-  margin-bottom: 20px; /* Space between sections */
+  margin-bottom: 20px;
   padding: 15px;
-  background-color: rgba(0, 0, 0, 0.8); /* Darker background for sections */
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
 }
 
@@ -74,7 +48,7 @@ button {
 }
 
 button:hover {
-  background-color: #00416A; /* Darker on hover */
+  background-color: #00416A;
 }
 
 h2, h3, label {
@@ -85,11 +59,9 @@ h2 {
   text-align: center;
 }
 
-h3 {
-  margin-top: 0; /* Remove extra margin for section titles */
-}
-
 #result {
   font-weight: bold;
   font-size: 18px;
+  color: white;
+  text-align: center;
 }
