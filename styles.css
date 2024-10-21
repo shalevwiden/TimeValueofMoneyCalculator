@@ -11,29 +11,38 @@ body {
   justify-content: center; /* Center items vertically */
 }
 
+/* Shared container styles */
 .container {
   padding: 20px;
   max-width: 400px;
   width: 100%;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
-  background: inherit; /* **Added to inherit background from body** */
-  border-radius: 10px; /* **Optional: add border radius for smoother corners** */
+  background: rgba(0, 0, 0, 0.6); /* Slightly transparent background for the container */
+  border-radius: 10px; /* Optional: add border radius for smoother corners */
 }
 
-/* Style for the welcome section */
-.welcome-section {
-  text-align: center;
+/* Specific styles for the Get Started page */
+.get-started-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Center the content vertically */
+  text-align: center; /* Center text */
+}
+
+.get-started-section {
   padding: 40px;
   background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent black background for contrast */
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
-.welcome-section h1 {
+.get-started-section h1 {
   margin-bottom: 20px;
 }
 
-.welcome-section button {
+.get-started-section button {
   background-color: #00B294;
   color: white;
   border: none;
@@ -43,8 +52,17 @@ body {
   font-size: 16px;
 }
 
-.welcome-section button:hover {
+.get-started-section button:hover {
   background-color: #00416A; /* Darker on hover */
+}
+
+/* Specific styles for the Calculator page */
+.calculator-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: flex-start; /* Align items to the top */
+  height: 100vh; /* Full viewport height */
 }
 
 .section {
@@ -93,4 +111,5 @@ h3 {
 #result {
   font-weight: bold;
   font-size: 18px;
+  text-align: center; /* Center result text */
 }
