@@ -1,17 +1,13 @@
-/* Style for the background gradient */
+/* General styles for both pages */
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #00416A, #00B294); /* Dark blue to green gradient */
   color: white; /* All text white */
   min-height: 100vh; /* Ensure background covers full viewport height */
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-/* Style for the container */
+/* Shared container styles */
 .container {
   padding: 20px;
   max-width: 400px;
@@ -19,23 +15,28 @@ body {
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* Style for the Get Started page (targeted using .get-started-container) */
+/* Specific styles for the Get Started page */
 .get-started-container {
-  padding: 20px;
-  max-width: 400px;
-  width: 100%;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
-  text-align: center; /* Center content */
-  background-color: rgba(0, 0, 0, 0.6); /* Add background for contrast */
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Center the content vertically */
+  text-align: center; /* Center text */
 }
 
-/* Style for the welcome section in the Get Started page */
-.welcome-section h1 {
+.get-started-section {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent black background for contrast */
+  border-radius: 10px;
   margin-bottom: 20px;
 }
 
-.welcome-section button {
+.get-started-section h1 {
+  margin-bottom: 20px;
+}
+
+.get-started-section button {
   background-color: #00B294;
   color: white;
   border: none;
@@ -45,15 +46,23 @@ body {
   font-size: 16px;
 }
 
-.welcome-section button:hover {
+.get-started-section button:hover {
   background-color: #00416A; /* Darker on hover */
 }
 
-/* Style for the calculator page (default) */
+/* Specific styles for the Calculator page */
+.calculator-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the top */
+  height: 100vh; /* Full viewport height */
+}
+
 .section {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Space between sections */
   padding: 15px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background for sections */
   border-radius: 10px;
 }
 
@@ -77,7 +86,7 @@ button {
 }
 
 button:hover {
-  background-color: #00416A;
+  background-color: #00416A; /* Darker on hover */
 }
 
 h2, h3, label {
@@ -88,9 +97,12 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  margin-top: 0; /* Remove extra margin for section titles */
+}
+
 #result {
   font-weight: bold;
   font-size: 18px;
-  color: white;
   text-align: center;
 }
