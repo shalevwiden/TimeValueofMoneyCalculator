@@ -3,12 +3,12 @@ body {
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #00416A, #00B294); /* Dark blue to green gradient */
   color: white; /* All text white */
-  min-height: 100vh; /* Ensure background covers full viewport height */
+  height: 100vh;
   margin: 0;
   display: flex;
   flex-direction: column; /* Stack elements vertically */
   align-items: center;
-  justify-content: center; /* Align items to the top */
+  justify-content: flex-start; /* Align items to the top */
 }
 
 .container {
@@ -45,35 +45,11 @@ body {
   background-color: #00416A; /* Darker on hover */
 }
 
-/* Specific styles for the Calculator page */
-.calculator-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start; /* Align items to the top */
-  height: 100vh; /* Full viewport height */
-}
-
-/* Style for the calculation section */
-.calculator-section {
-  width: 100%;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.1); /* More gradient-like background */
-  border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
-  margin-top: 20px; /* Space above */
-}
-
-/* Ensuring input and button alignment */
 .section {
   margin-bottom: 20px; /* Space between sections */
   padding: 15px;
-  background-color: rgba(255, 255, 255, 0.1); /* More gradient-like background */
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background for sections */
   border-radius: 10px;
-  width: 100%; /* Full width for better alignment */
-  display: flex;
-  flex-direction: column; /* Stack inputs vertically */
-  align-items: center; /* Center align inputs */
 }
 
 input {
@@ -114,6 +90,4 @@ h3 {
 #result {
   font-weight: bold;
   font-size: 18px;
-  text-align: center;
 }
-
