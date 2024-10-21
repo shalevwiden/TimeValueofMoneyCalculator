@@ -1,31 +1,78 @@
-Updated gradient CSS: 
-
 /* Style for the background gradient */
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #00416A, #00B294); /* Dark blue to green gradient */
   color: white; /* All text white */
-  min-height: 100vh; /* Ensure background covers full viewport height */
+  height: 100vh;
   margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
 }
 
+/* Shared container styles */
 .container {
   padding: 20px;
   max-width: 400px;
   width: 100%;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4); /* Adjusted to match gradient better */
+  border-radius: 10px; /* Optional: add border radius for smoother corners */
 }
 
-/* Style for the sections */
-.section {
-  margin-bottom: 20px;
-  padding: 15px;
-  background-color: rgba(0, 0, 0, 0.8);
+/* Specific styles for the Get Started page */
+.get-started-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Center the content vertically */
+  text-align: center; /* Center text */
+}
+
+.get-started-section {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent black background for contrast */
   border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.get-started-section h1 {
+  margin-bottom: 20px;
+}
+
+.get-started-section button {
+  background-color: #00B294;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.get-started-section button:hover {
+  background-color: #00416A; /* Darker on hover */
+}
+
+/* Specific styles for the Calculator page */
+.calculator-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: flex-start; /* Align items to the top */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Style for calculation sections */
+.calculation-section {
+  margin-bottom: 20px; /* Space between sections */
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white to match the gradient */
+  border-radius: 10px;
+  width: 100%; /* Ensure sections take full width */
+  text-align: center; /* Center text within sections */
 }
 
 input {
@@ -48,7 +95,7 @@ button {
 }
 
 button:hover {
-  background-color: #00416A;
+  background-color: #00416A; /* Darker on hover */
 }
 
 h2, h3, label {
@@ -59,9 +106,12 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  margin-top: 0; /* Remove extra margin for section titles */
+}
+
 #result {
   font-weight: bold;
   font-size: 18px;
-  color: white;
-  text-align: center;
+  text-align: center; /* Center result text */
 }
